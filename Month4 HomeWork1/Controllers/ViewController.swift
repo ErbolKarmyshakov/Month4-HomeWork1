@@ -212,8 +212,6 @@ class ViewController: UIViewController {
         
   setUpConstraintsForSomeImage()
         
-        setUpConstraintsForWhiteView()
-        
         eyeBtnTapped(eyeBtn)
         
         checkboxTapped()
@@ -242,10 +240,11 @@ class ViewController: UIViewController {
     
     private func setUpConstraintsForRegistrView(){
         view.addSubview(registrView)
-        registrView.topAnchor.constraint(equalTo: signLbl.bottomAnchor, constant: 8).isActive  = true
-        registrView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        registrView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        registrView.topAnchor.constraint(equalTo: signLbl.bottomAnchor).isActive  = true
+        registrView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        registrView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         registrView.heightAnchor.constraint(equalToConstant: 442).isActive = true
+        registrView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     private func setUpConstraintsForFirstTFLabel(){
@@ -336,14 +335,15 @@ class ViewController: UIViewController {
    
     private func setUpConstraintsForDontLbl(){
         registrView.addSubview(dontHaveLbl)
-        dontHaveLbl.topAnchor.constraint(equalTo: someImage.topAnchor, constant: 14).isActive = true
+        dontHaveLbl.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 26).isActive = true
             dontHaveLbl.leadingAnchor.constraint(equalTo: someImage.leadingAnchor, constant: 10).isActive = true
                 dontHaveLbl.heightAnchor.constraint(equalToConstant: 16).isActive = true
     }
     
     private func setUpConstraintsForSignInBtn(){
         registrView.addSubview(signInBtn)
-        signInBtn.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 20).isActive = true
+       // signInBtn.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 20).isActive = true
+        signInBtn.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 14).isActive = true
                 signInBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
                 signInBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
                 signInBtn.widthAnchor.constraint(equalToConstant: 168).isActive = true
