@@ -160,12 +160,6 @@ class ViewController: UIViewController {
         return signIn
     }()
     
-    private let whiteView: UIView =  {
-        let white = UIView()
-        white.backgroundColor = UIColor.red
-        return white
-    }()
-    
     private let someImage: UIImageView = {
         let someImage = UIImageView()
         someImage.translatesAutoresizingMaskIntoConstraints = false
@@ -226,6 +220,7 @@ class ViewController: UIViewController {
         
         setUpConstraintsForDontLbl()
     }
+    
     private  func setUpConstraintsForImage(){
          view.addSubview(childPhoto)
         childPhoto.topAnchor.constraint(equalTo: view.topAnchor, constant: 29).isActive = true
@@ -338,13 +333,7 @@ class ViewController: UIViewController {
         signUpBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
         signUpBtn.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
     }
-    
-    private func setUpConstraintsForWhiteView(){
-        view.addSubview(whiteView)
-        whiteView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: 30).isActive = true
-        whiteView.widthAnchor.constraint(equalToConstant:374).isActive = true
-    }
-    
+   
     private func setUpConstraintsForDontLbl(){
         registrView.addSubview(dontHaveLbl)
         dontHaveLbl.topAnchor.constraint(equalTo: someImage.topAnchor, constant: 14).isActive = true
@@ -371,7 +360,6 @@ class ViewController: UIViewController {
 @objc func eyeBtnTapped(_ sender: UIButton) {
     isPasswordVisible.toggle()
             secondTF.isSecureTextEntry = !isPasswordVisible
-    
 }
 
 @objc func checkboxTapped() {
@@ -413,9 +401,6 @@ class ViewController: UIViewController {
     }
 }
     
-
-
-
 extension UIView {
     
     var safeTopAnchor: NSLayoutYAxisAnchor {
