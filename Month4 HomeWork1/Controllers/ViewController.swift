@@ -309,6 +309,7 @@ class ViewController: UIViewController {
         registrView.addSubview(forgotBtn)
         forgotBtn.topAnchor.constraint(equalTo: secondLineView.bottomAnchor, constant: 3).isActive = true
         forgotBtn.trailingAnchor.constraint(equalTo: registrView.trailingAnchor, constant: -22).isActive = true
+        forgotBtn.addTarget(self, action: #selector(forgetTapped), for: .touchUpInside)
     }
     
     private func setUpConstraintsForCheckImage(){
@@ -403,6 +404,12 @@ class ViewController: UIViewController {
     @objc func signUpTapped(_ sender: UIButton) {
         let vc = SignUpViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func forgetTapped(_ sender: UIButton) {
+        let vc = ForgetViewController()
+        navigationController?.pushViewController(vc, animated: true )
+        
     }
 }
     
