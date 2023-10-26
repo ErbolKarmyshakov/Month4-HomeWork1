@@ -342,7 +342,6 @@ class ViewController: UIViewController {
     
     private func setUpConstraintsForSignInBtn(){
         registrView.addSubview(signInBtn)
-       // signInBtn.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 20).isActive = true
         signInBtn.topAnchor.constraint(equalTo: signUpBtn.bottomAnchor, constant: 14).isActive = true
                 signInBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
                 signInBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
