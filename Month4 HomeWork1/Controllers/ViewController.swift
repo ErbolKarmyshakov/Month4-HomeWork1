@@ -240,7 +240,7 @@ class ViewController: UIViewController {
     
     private func setUpConstraintsForRegistrView(){
         view.addSubview(registrView)
-        registrView.topAnchor.constraint(equalTo: signLbl.bottomAnchor).isActive  = true
+        registrView.topAnchor.constraint(equalTo: signLbl.bottomAnchor, constant: 8).isActive  = true
         registrView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         registrView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         registrView.heightAnchor.constraint(equalToConstant: 442).isActive = true
