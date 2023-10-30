@@ -394,7 +394,7 @@ class ViewController: UIViewController {
     }
     
     @objc func forgetTapped(_ sender: UIButton) {
-        let vc = ForgetViewController()
+        let vc = SubmitViewController()
         navigationController?.pushViewController(vc, animated: true )
         
     }

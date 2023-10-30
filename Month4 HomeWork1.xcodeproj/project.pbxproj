@@ -15,6 +15,7 @@
 		6308B9CC2AE3907600919212 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308B9CB2AE3907600919212 /* SignUpViewController.swift */; };
 		6308B9CE2AE9A51200919212 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308B9CD2AE9A51200919212 /* SuccesViewController.swift */; };
 		6308B9D02AE9A5E200919212 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308B9CF2AE9A5E200919212 /* ForgetViewController.swift */; };
+		6308B9F92AF051B600919212 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308B9F82AF051B600919212 /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6308B9CB2AE3907600919212 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6308B9CD2AE9A51200919212 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
 		6308B9CF2AE9A5E200919212 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
+		6308B9F82AF051B600919212 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				6308B9CB2AE3907600919212 /* SignUpViewController.swift */,
 				6308B9CD2AE9A51200919212 /* SuccesViewController.swift */,
 				6308B9CF2AE9A5E200919212 /* ForgetViewController.swift */,
+				6308B9F82AF051B600919212 /* SubmitViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6308B9F92AF051B600919212 /* SubmitViewController.swift in Sources */,
 				6308B9CE2AE9A51200919212 /* SuccesViewController.swift in Sources */,
 				6308B9B82AE351AA00919212 /* ViewController.swift in Sources */,
 				6308B9B42AE351AA00919212 /* AppDelegate.swift in Sources */,
